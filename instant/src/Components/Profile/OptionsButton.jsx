@@ -1,0 +1,1 @@
+//Desplegara una barra horizontal que ocupara el 40% de la pagina (o lo que necesite para renderizar) y mostrara un boton para cambiar entre modo oscuro y claro y un link hacia /About

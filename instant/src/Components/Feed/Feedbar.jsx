@@ -1,0 +1,1 @@
+//Se renderizaran en orden horizontal las {Stories} de tus seguidos

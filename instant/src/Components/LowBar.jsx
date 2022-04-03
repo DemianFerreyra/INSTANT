@@ -1,0 +1,1 @@
+//barra inferior (feed => publicaciones recomendadas => crear publicacion/historia => perfil)

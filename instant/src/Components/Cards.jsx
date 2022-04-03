@@ -1,0 +1,1 @@
+//Renderizara la publicacion y recibira como parametro el (nombre y foto de perfil del usuario, una id para el link al perfil del mismo), descripcion de la publicacion, la imagen y la cantidad de likes
