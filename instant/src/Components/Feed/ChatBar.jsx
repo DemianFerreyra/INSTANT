@@ -1,1 +1,1 @@
-//Barra de chat (al desplegar sera una barra horizontal que ocupara el 70% del ancho de la App) (cerrado sera solo un boton)
+//Barra de chat (opcion 1:al desplegar sera una barra horizontal que ocupara el 70% del ancho de la App -- opcion 2:abrira otra pagina mediante un LinkTo) (cerrado sera solo un boton)
