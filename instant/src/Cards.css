@@ -1,0 +1,27 @@
+.Card{
+    border-radius: 10px;
+    margin: 10px;
+    background-color: whitesmoke;
+    width: 400px;
+    min-height: 500px;
+}
+.ProfilePost{
+    align-items: center;
+    display: flex;
+    flex: row;
+}
+.Postimg{
+    border-radius: 10px;
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+.Profilepic{
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
