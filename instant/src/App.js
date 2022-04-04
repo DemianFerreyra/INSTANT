@@ -5,6 +5,7 @@ import Feed from './Components/Feed/Feed'
 import Profile from './Components/Profile/Profile.jsx'
 import Recommended from './Components/Recommended/Recommended'
 import About from './Components/About'
+import Follows from './Components/Profile/Follows'
 
 
 
@@ -16,7 +17,7 @@ function App() {
         <Route path="/profile/:id" element={<Profile />} />
         <Route path="/recommended" element={<Recommended />} />
         <Route path="/about" element={<About />} />
-
+        <Route path="/profile/:id/follows" element={<Follows />} />
       </Routes>
     </div>
   );

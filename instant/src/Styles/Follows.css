@@ -1,0 +1,17 @@
+.FollowList{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.Followelement{
+    display: flex;
+    flex-direction: row;
+}
+.Followelement img{
+    margin-right: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
