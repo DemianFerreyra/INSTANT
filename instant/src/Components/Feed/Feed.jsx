@@ -9,10 +9,10 @@ import images from "../ExampleData/cefe/Cefefotos.js";
 const Feed = () =>{
   const user = {
     profilePic : images.foto0, 
-    username : 'ceferinoLarva', 
-    bio : 'El mas Larvon de todos jajja saludos perros', 
-    posts : [{image : images.foto2, desc : 'zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd'}, {image : images.foto2, desc : 'zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd'}, {image : images.foto2, desc : 'zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd'}], 
-    follows : [0, 4, 20, 1],
+    username : 'Gatonaranja', 
+    bio : 'Gato color naranja', 
+    posts : [{image : images.foto2, desc : 'zzz'}, {image : images.foto2, desc : 'zz otra vez'}], 
+    follows : [2],
     followers: []
   }
   const dispatch = useDispatch()

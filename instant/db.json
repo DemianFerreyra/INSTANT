@@ -24,8 +24,8 @@
           "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
         },
         {
-          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
-          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+          "image": "/static/media/cefe1.04c1be5be2781b3dff75.jpg",
+          "desc": "entre a una caja y sali sin guevitos jasjas"
         },
         {
           "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
@@ -33,65 +33,29 @@
         }
       ],
       "follows": [
-        0,
-        4,
-        20,
-        1
+        2, 1
       ],
-      "followers": [
-        {
-          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
-          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
-        },
-        {
-          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
-          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
-        },
-        {
-          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
-          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
-        }
-      ],
+      "followers": [],
       "id": 1
     },
     {
       "profilePic": "/static/media/cefe0.c6a3769519eaaeff5a60.jpg",
-      "username": "ceferinoLarva",
-      "bio": "El mas Larvon de todos jajja saludos perros",
+      "username": "Gatonaranja",
+      "bio": "Gato color naranja",
       "posts": [
         {
           "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
-          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+          "desc": "zzz"
         },
         {
-          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
-          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
-        },
-        {
-          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
-          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+          "image": "/static/media/cefe1.04c1be5be2781b3dff75.jpg",
+          "desc": "entre a una caja y sali sin guevitos jasjas"
         }
       ],
       "follows": [
-        0,
-        4,
-        20,
         1
       ],
-      "followers": [
-        {
-          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
-          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
-        },
-        {
-          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
-          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
-        },
-        {
-          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
-          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
-        }
-      ],
+      "followers": [],
       "id": 2
     }
   ]

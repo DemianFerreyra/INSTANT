@@ -1,21 +1,28 @@
 import axios from 'axios';
-import { GetUser, CreateUser} from './Actions'
+import { GetUser, CreateUser, GetFollowList} from './Actions'
 let ids = 0;
 
 const initialState = {
   users: [],
   user: {},
 };
-console.log('a')
 const rootReducer = (state = initialState, action) =>{
-    console.log('a')
-    console.log(state.users)
     switch(action.type){
         case GetUser:
+          console.log('get de usuario completo')
         return{
             ...state,
             user: action.payload
         }
+        
+        case GetFollowList:
+          console.log('get de usuarioss completo')
+          console.log(state.users)
+        return{
+            ...state,
+            users: action.payload
+        }
+
         case CreateUser:
         console.log('nuevo usuario')
         ids++
@@ -27,7 +34,7 @@ const rootReducer = (state = initialState, action) =>{
               bio : action.payload.bio,
               posts : action.payload.posts,
               follows : action.payload.follows,
-              followers : action.payload.posts,
+              followers : action.payload.followers,
             },
             {
               headers: {
@@ -39,6 +46,7 @@ const rootReducer = (state = initialState, action) =>{
             ...state,
             users: [...state.users, {...action.payload, id: ids}]
         }
+
         default: return {...state}
     }
 }

@@ -1,19 +1,30 @@
 //Aca se renderizan los follows segun id
 import React from "react";
+import {useDispatch, useSelector} from 'react-redux'
 import { Link } from "react-router-dom";
-import * as users from "../ExampleData/users.ts";
+import { GetFollows } from "../../Redux/Actions";
 
-function follows(){
+const Follows = () =>{
+  const details = useSelector((state) => state.user)
+  const follows = useSelector((state) => state.users)
+  const dispatch = useDispatch();
+
+  
+  React.useEffect(() => {
+      dispatch(GetFollows(details.follows))
+  }, []);
+  
+
     return(
-    <div className="FollowList">
+    follows[0]?(<div className="FollowList">
       {
-        users.seferino.follows?.map(() => 
+        follows.map((follow) => 
           <div className="Followelement">
-           <img src={users.seferino.profilePic}/>
-           <Link style={{textDecoration: 'none', color: "black"}} to ={`/profile/${users.seferino.id}`}> <h2>{users.seferino.username}</h2> </Link> 
+           <img src={follow.profilePic}/>
+           <Link style={{textDecoration: 'none', color: "black"}} to ={`/profile/${follow.id}`}> <h2>{follow.username}</h2> </Link> 
           </div>
         )
       }
-    </div>)
+    </div>) : console.log('nada', follows))
 }
-export default follows;
+export default Follows;

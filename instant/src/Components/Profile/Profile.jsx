@@ -1,20 +1,23 @@
 //Renderizara las {Cards} de (sus publicaciones, su foto de perfil, nombre de usuario y su descripcion), ademas del {OptionsButton}(la cual solo se desplegara mostrando la opcion de cambiar entre el modo oscuro y claro y el link hacia el /About) y de la {LowBar}
 import React from "react";
 import {useDispatch, useSelector} from 'react-redux'
-import { Link } from "react-router-dom";
+import { Link, useParams} from "react-router-dom";
 import { getUser } from "../../Redux/Actions";
 import Cards from "../Cards"
 
-const Profile = ({match}) =>{
+const Profile = () =>{
   const details = useSelector((state) => state.user)
   const dispatch = useDispatch();
+  const id = useParams();
 
+  
   React.useEffect(() => {
-      dispatch(getUser(match.params.id))
+      console.log(id.id)
+      dispatch(getUser(id.id))
   }, []);
 
       return (
-       <div>
+       details.username?(<div>
          <div className="Profile">
            <div className="Right">
              <li>
@@ -39,7 +42,7 @@ const Profile = ({match}) =>{
               <Cards image={post.image} desc={post.desc} name={details.username} profpic={details.profilePic} id={details.id}/>
              )}
           </div>
-       </div>
+       </div>) : null
       )
 }
 export default Profile;
