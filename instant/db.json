@@ -1,0 +1,98 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profiles": [
+    {
+      "profilePic": "/static/media/cefe0.c6a3769519eaaeff5a60.jpg",
+      "username": "ceferinoLarva",
+      "bio": "El mas Larvon de todos jajja saludos perros",
+      "posts": [
+        {
+          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
+          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+        },
+        {
+          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
+          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+        },
+        {
+          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
+          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+        }
+      ],
+      "follows": [
+        0,
+        4,
+        20,
+        1
+      ],
+      "followers": [
+        {
+          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
+          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+        },
+        {
+          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
+          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+        },
+        {
+          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
+          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "profilePic": "/static/media/cefe0.c6a3769519eaaeff5a60.jpg",
+      "username": "ceferinoLarva",
+      "bio": "El mas Larvon de todos jajja saludos perros",
+      "posts": [
+        {
+          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
+          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+        },
+        {
+          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
+          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+        },
+        {
+          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
+          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+        }
+      ],
+      "follows": [
+        0,
+        4,
+        20,
+        1
+      ],
+      "followers": [
+        {
+          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
+          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+        },
+        {
+          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
+          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+        },
+        {
+          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
+          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+        }
+      ],
+      "id": 2
+    }
+  ]
+}

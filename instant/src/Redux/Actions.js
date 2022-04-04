@@ -1,7 +1,7 @@
+import axios from "axios"
 export const GetUser = "GetUser";
 export const GetAllUsers = "GetAllUsers";
 export const CreateUser = "CreateUser";
-
 
 export const getUser = (id) => {
   console.log('get de usuario en proceso')
