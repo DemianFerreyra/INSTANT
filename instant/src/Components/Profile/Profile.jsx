@@ -33,6 +33,7 @@ const Profile = () =>{
                  <p>Follows : <Link style={{textDecoration: 'none', color: "black"}} to ={`/profile/${details.id}/follows`}>{details.follows.length}</Link></p>
                </li>
              </ul>
+             <Link style={{textDecoration: 'none', color: "black"}} to ={`/`}> <h2>POSTS</h2> </Link> 
            </div>
          </div>
          <div className="Cards">

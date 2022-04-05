@@ -21,15 +21,27 @@
       "posts": [
         {
           "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
-          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd",
+          "uploader": 1,
+          "uploadername": "CeferinoLarva",
+          "pic": "/static/media/cefe0.c6a3769519eaaeff5a60.jpg",
+          "date": "4/4/2022"
         },
         {
           "image": "/static/media/cefe1.04c1be5be2781b3dff75.jpg",
-          "desc": "entre a una caja y sali sin guevitos jasjas"
+          "desc": "entre a una caja y sali sin guevitos jasjas",
+          "uploader": 1,
+          "uploadername": "CeferinoLarva",
+          "pic": "/static/media/cefe0.c6a3769519eaaeff5a60.jpg",
+          "date": "5/4/2022"
         },
         {
           "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
-          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd"
+          "desc": "zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd",
+          "uploader": 1,
+          "uploadername": "CeferinoLarva",
+          "pic": "/static/media/cefe0.c6a3769519eaaeff5a60.jpg",
+          "date": "5/4/2022"
         }
       ],
       "follows": [
@@ -45,11 +57,19 @@
       "posts": [
         {
           "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
-          "desc": "zzz"
+          "desc": "zzz",
+          "uploader": 2,
+          "uploadername": "Gatonaranja",
+          "pic": "/static/media/cefe0.c6a3769519eaaeff5a60.jpg",
+          "date": "3/4/2022"
         },
         {
           "image": "/static/media/cefe1.04c1be5be2781b3dff75.jpg",
-          "desc": "entre a una caja y sali sin guevitos jasjas"
+          "desc": "entre a una caja y sali sin guevitos jasjas",
+          "uploader": 2,
+          "uploadername": "Gatonaranja",
+          "pic": "/static/media/cefe0.c6a3769519eaaeff5a60.jpg",
+          "date": "5/4/2022"
         }
       ],
       "follows": [

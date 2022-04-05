@@ -1,23 +1,30 @@
 import axios from 'axios';
-import { GetUser, CreateUser, GetFollowList} from './Actions'
+import { GETUSER, CreateUser, GetFollowList, GETFEED} from './Actions'
 let ids = 0;
 
 const initialState = {
   users: [],
   user: {},
+  posts: [],
 };
 const rootReducer = (state = initialState, action) =>{
     switch(action.type){
-        case GetUser:
+        case GETUSER:
           console.log('get de usuario completo')
         return{
             ...state,
             user: action.payload
         }
         
+        case GETFEED:
+          console.log('get de posts completo')
+        return{
+            ...state,
+            posts: action.payload
+        }
+
         case GetFollowList:
           console.log('get de usuarioss completo')
-          console.log(state.users)
         return{
             ...state,
             users: action.payload
