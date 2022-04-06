@@ -12,7 +12,7 @@ const Profile = () =>{
 
   
   React.useEffect(() => {
-      console.log(id.id)
+      console.log(id)
       dispatch(getUser(id.id))
   }, []);
 

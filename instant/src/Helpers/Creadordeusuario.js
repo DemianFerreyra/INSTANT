@@ -6,15 +6,13 @@ import images from "../Components/ExampleData/cefe/Cefefotos.js";
 export default function Crearusuario(){
   const dispatch = useDispatch()
 
-  console.log('boton clickado')
-  const user = {
-    profilePic : images.foto0, 
-    username : 'ceferinoLarva', 
-    bio : 'El mas Larvon de todos jajja saludos perros', 
-    posts : [{image : images.foto2, desc : 'zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd'}, {image : images.foto2, desc : 'zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd'}, {image : images.foto2, desc : 'zzz aca hechandome una siestita como buena larva que soy jsjsjs xdd'}], 
+  const user2 = {
+    profilePic : images.foto3, 
+    username : 'Gato Naranja', 
+    bio : 'Gato de color naranja', 
+    posts : [{image : images.foto2, desc : 'zzz aca hechandome una siestita'}, {image : images.foto1, desc : 'entre a una caja y sali sin guevitos'}], 
     follows : [0, 4, 20, 1],
     followers: []
   }
-  console.log(user)
-  dispatch(createUser(user))
+  //dispatch(createUser(user2))
 }

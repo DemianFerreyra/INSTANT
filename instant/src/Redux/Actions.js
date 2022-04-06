@@ -9,6 +9,7 @@ export const CreateUser = "CreateUser";
 
 export const getUser = (id) => {
   console.log('get de usuario en proceso')
+  console.log(id)
     return async function(dispatch){
       return fetch(`http://localhost:3001/profiles/${id}`)
       .then(res => res.json())
@@ -19,6 +20,7 @@ export const getUser = (id) => {
 export const GetFeed = (ids) => {
   let responses = []
   console.log('get de posts feed en proceso')
+  console.log(ids)
   return async function(dispatch){
       for (let index = 0; index < ids.length; index++) {
         const a = await fetch(`http://localhost:3001/profiles/${ids[index]}`)
@@ -47,6 +49,6 @@ export const GetFollows = (ids) => {
 }
 
 export const createUser = (data) => {
-    console.log('usuario en proceso')
+    console.log('creacion de usuario en proceso')
     return{type: CreateUser, payload: data}
 }

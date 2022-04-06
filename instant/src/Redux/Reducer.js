@@ -2,11 +2,13 @@ import axios from 'axios';
 import { GETUSER, CreateUser, GetFollowList, GETFEED} from './Actions'
 let ids = 0;
 
+
 const initialState = {
   users: [],
   user: {},
   posts: [],
 };
+
 const rootReducer = (state = initialState, action) =>{
     switch(action.type){
         case GETUSER:
