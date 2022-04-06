@@ -11,6 +11,14 @@ const initialState = {
 
 const rootReducer = (state = initialState, action) =>{
     switch(action.type){
+        case "clean":
+          console.log('borrando')
+          return{
+            ...state,
+            user: {},
+            users: [],
+            posts: [],
+          }
         case GETUSER:
           console.log('get de usuario completo')
         return{

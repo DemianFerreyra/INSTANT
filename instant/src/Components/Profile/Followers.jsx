@@ -6,25 +6,25 @@ import { GetFollows } from "../../Redux/Actions";
 
 const Follows = () =>{
   const details = useSelector((state) => state.user)
-  const follows = useSelector((state) => state.users)
+  const followers = useSelector((state) => state.users)
   const dispatch = useDispatch();
 
   
   React.useEffect(() => {
-      dispatch(GetFollowers(details.follows))
+      dispatch(GetFollows(details.followers))
   }, []);
   
 
     return(
-    follows[0]?(<div className="FollowList">
+    followers[0]?(<div className="FollowList">
       {
-        follows.map((follow) => 
+        followers.map((follow) => 
           <div className="Followelement">
            <img src={follow.profilePic}/>
            <Link style={{textDecoration: 'none', color: "black"}} to ={`/profile/${follow.id}`}> <h2>{follow.username}</h2> </Link> 
           </div>
         )
       }
-    </div>) : console.log('nada', follows))
+    </div>) : console.log('nada', followers))
 }
 export default Follows;

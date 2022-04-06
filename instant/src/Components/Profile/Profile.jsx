@@ -6,6 +6,7 @@ import { getUser } from "../../Redux/Actions";
 import Cards from "../Cards"
 
 const Profile = () =>{
+
   const details = useSelector((state) => state.user)
   const dispatch = useDispatch();
   const id = useParams();

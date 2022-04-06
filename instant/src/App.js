@@ -6,18 +6,19 @@ import Profile from './Components/Profile/Profile.jsx'
 import Recommended from './Components/Recommended/Recommended'
 import About from './Components/About'
 import Follows from './Components/Profile/Follows'
-
-
+import Followers from './Components/Profile/Followers'
+import LowBar from './Components/LowBar.jsx'
 
 function App() {
   return (
     <div className="App">
       <Routes>  
-        <Route exact path="/" element={<Feed />} />
-        <Route path="/profile/:id" element={<Profile />} />
-        <Route path="/recommended" element={<Recommended />} />
+        <Route exact path="/" element={[<Feed />, <LowBar/>]} />
+        <Route path="/profile/:id" element={[<Profile />, <LowBar/>]} />
+        <Route path="/recommended" element={[<Recommended />, <LowBar/>]} />
         <Route path="/about" element={<About />} />
-        <Route path="/profile/:id/follows" element={<Follows />} />
+        <Route path="/profile/:id/follows" element={[<Follows />, <LowBar/>]} />
+        <Route path="/profile/:id/followers" element={[<Followers />, <LowBar/>]} />
       </Routes>
     </div>
   );
