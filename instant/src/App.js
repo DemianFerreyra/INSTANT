@@ -2,7 +2,7 @@ import './App.css';
 import * as React from "react";
 import {Route, Routes} from 'react-router-dom'
 import Feed from './Components/Feed/Feed'
-import Profile from './Components/Profile/Profile.jsx'
+import {Profile} from './Components/Profile/Profile.jsx'
 import Recommended from './Components/Recommended/Recommended'
 import About from './Components/About'
 import Follows from './Components/Profile/Follows'

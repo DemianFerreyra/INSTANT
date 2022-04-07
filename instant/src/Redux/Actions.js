@@ -4,7 +4,7 @@ export const GETFEED = "GetFeed";
 export const GetFollowList = "GetFollows";
 export const GetAllUsers = "GetAllUsers";
 export const CreateUser = "CreateUser";
-
+export const GETSELF = "CreateUser";
 
 
 export const getUser = (id) => {
@@ -45,6 +45,20 @@ export const GetFollows = (ids) => {
       }
       console.log(responses)
       dispatch({type: GetFollowList, payload: responses})
+  }   
+}
+
+export const GetSelf = (id) => {
+  console.log('get de follows/followers del usuario self en proceso')
+  return async function(dispatch){
+        const a = await fetch(`http://localhost:3001/profiles/${id}`)
+        .then(res => res.json())
+        .then(selfuser => dispatch({type: GETSELF, payload: selfuser}))
+      //   console.log('slefff',a)
+      //   responses.follows.push(a.follows);
+      //   responses.followers.push(a.followers);
+      // console.log('self',responses)
+      // dispatch({type: GETSELF, payload: responses})
   }   
 }
 

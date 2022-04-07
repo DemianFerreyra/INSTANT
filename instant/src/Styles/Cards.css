@@ -3,9 +3,11 @@
     margin: 5px;
     background-color: whitesmoke;
     width: 350px;
-    min-height: 500px;
+    min-height: 400px;
+    overflow-x: hidden;
 }
 .ProfilePost{
+    background-color: rgba(0, 0, 0, 0.089);
     align-items: center;
     display: flex;
     flex: row;

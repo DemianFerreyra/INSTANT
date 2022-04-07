@@ -2,20 +2,36 @@
 import React from "react";
 import {useDispatch, useSelector} from 'react-redux'
 import { Link, useParams} from "react-router-dom";
-import { getUser } from "../../Redux/Actions";
+import { getUser, GetSelf } from "../../Redux/Actions";
 import Cards from "../Cards"
+import Crearusuario from "../../Helpers/Creadordeusuario";
+import {Setfollow} from "../../Helpers/Helperfunctions"
 
-const Profile = () =>{
-
+export const Profile = () =>{
+  const self = useSelector((state) => state.selfuser)
   const details = useSelector((state) => state.user)
   const dispatch = useDispatch();
   const id = useParams();
+  let boton = undefined;
 
-  
   React.useEffect(() => {
-      console.log(id)
       dispatch(getUser(id.id))
+      dispatch(GetSelf(0))
   }, []);
+  function handleclick(){
+    Setfollow(self.follows, details.followers, self.id, id)
+    self.follows.filter(Checkfollow)
+  }
+
+  self.follows?.filter(Checkfollow)
+  function Checkfollow(follow){
+    boton = document.getElementById('seguir');
+    if(boton && parseInt(id.id) === follow){
+    boton.innerText = "dejar de seguir"
+    }else if(boton && parseInt(id.id) !== follow){
+    boton.innerText = "seguir"
+    }
+  }
 
       return (
        details.username?(<div>
@@ -33,18 +49,20 @@ const Profile = () =>{
                  <p>Followers : <Link style={{textDecoration: 'none', color: "black"}} to ={`/profile/${details.id}/followers`}>{details.followers.length}</Link></p>
                  <p>Follows : <Link style={{textDecoration: 'none', color: "black"}} to ={`/profile/${details.id}/follows`}>{details.follows.length}</Link></p>
                </li>
+               <li className="top" style={{listStyle : 'none'}}>
+                 <button className="profbutton" id="seguir" onClick={handleclick}>seguir</button>
+                 <button className="profbutton">mensaje</button>
+               </li>
              </ul>
-             <Link style={{textDecoration: 'none', color: "black"}} to ={`/`}> <h2>POSTS</h2> </Link> 
            </div>
          </div>
          <div className="Cards">
              {
               details.posts?.map((post) =>
               //image, desc, name, profpic, id
-              <Cards image={post.image} desc={post.desc} name={details.username} profpic={details.profilePic} id={details.id}/>
+              <Cards image={post.image} desc={post.desc} name={details.username} profpic={details.profilePic} id={details.id} date={post.date}/>
              )}
           </div>
        </div>) : null
       )
 }
-export default Profile;

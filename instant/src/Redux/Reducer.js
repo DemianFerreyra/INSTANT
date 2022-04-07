@@ -1,9 +1,10 @@
 import axios from 'axios';
-import { GETUSER, CreateUser, GetFollowList, GETFEED} from './Actions'
+import { GETUSER, CreateUser, GetFollowList, GETFEED, GETSELF} from './Actions'
 let ids = 0;
 
 
 const initialState = {
+  selfuser: [],
   users: [],
   user: {},
   posts: [],
@@ -24,6 +25,13 @@ const rootReducer = (state = initialState, action) =>{
         return{
             ...state,
             user: action.payload
+        }
+        case GETSELF:
+          console.log('get de usuario self completo')
+          console.log(action.payload)
+        return{
+            ...state,
+            selfuser: action.payload
         }
         
         case GETFEED:
