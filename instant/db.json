@@ -18,7 +18,9 @@
       "profilePic": "/static/media/DIana2.40508aaf22be86823220.jpg",
       "username": "Usuario de prueba",
       "bio": "Soy un usuario de prueba, pero puedes modificar mis atributos!",
-      "posts": [],
+      "posts": [
+
+      ],
       "follows": [],
       "followers": [
         1,

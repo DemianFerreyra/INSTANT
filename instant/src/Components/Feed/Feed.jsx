@@ -19,6 +19,7 @@ const Feed = () =>{
   }, []);
   posts.sort(compare)
     return(posts[0]?(<div className="feed"> 
+    <p>Este es tu feed</p>
       { 
         posts.map((post) => 
           <Cards image={post.image} desc={post.desc} name={post.uploadername} profpic={post.uploaderpic} id={post.uploaderid} date={post.date}/>

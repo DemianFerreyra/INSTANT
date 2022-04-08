@@ -17,6 +17,7 @@ const Follows = () =>{
 
     return(
     followers[0]?(<div className="FollowList">
+      <p>Cuentas que te siguen</p>
       {
         followers.map((follow) => 
           <div className="Followelement">

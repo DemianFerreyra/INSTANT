@@ -4,6 +4,7 @@
     flex-direction: column;
 }
 .Followelement{
+    align-items: center;
     display: flex;
     flex-direction: row;
 }

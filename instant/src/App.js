@@ -8,6 +8,8 @@ import About from './Components/About'
 import Follows from './Components/Profile/Follows'
 import Followers from './Components/Profile/Followers'
 import LowBar from './Components/LowBar.jsx'
+import Createpost from './Components/CreatePost/Createpost';
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/profile/:id/follows" element={[<Follows />, <LowBar/>]} />
         <Route path="/profile/:id/followers" element={[<Followers />, <LowBar/>]} />
+        <Route path="/createpost" element={[<Createpost />, <LowBar/>]} />
       </Routes>
     </div>
   );

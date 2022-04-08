@@ -19,7 +19,7 @@ export const Profile = () =>{
       dispatch(GetSelf(0))
   }, []);
   function handleclick(){
-    Setfollow(self.follows, details.followers, self.id, id)
+    Setfollow(self.follows, details.followers, self.id, parseInt(id.id))
     self.follows.filter(Checkfollow)
   }
 
