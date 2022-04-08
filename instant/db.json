@@ -18,13 +18,16 @@
       "profilePic": "/static/media/DIana2.40508aaf22be86823220.jpg",
       "username": "Usuario de prueba",
       "bio": "Soy un usuario de prueba, pero puedes modificar mis atributos!",
-      "posts": [
-
+      "posts": [],
+      "follows": [
+        4
       ],
-      "follows": [],
       "followers": [
         1,
-        2
+        2,
+        3,
+        4,
+        5
       ],
       "id": 0
     },
@@ -77,29 +80,69 @@
       "id": 2
     },
     {
-      "profilePic": "/static/media/cefe1.04c1be5be2781b3dff75.jpg",
-      "username": "Gato Naranja",
-      "bio": "Gato de color naranja",
+      "profilePic": "/static/media/Athena2.650354ca1984069ee6d3.jpg",
+      "username": "Athena",
+      "bio": "Fotos de stock de Athena (pexels.com)",
       "posts": [
         {
-          "image": "/static/media/cefe2.b6c4faaeef4fc06d8feb.jpeg",
-          "desc": "zzz aca hechandome una siestita",
-          "uploadername": "Gato Naranja",
-          "uploaderpic": "/static/media/cefe1.04c1be5be2781b3dff75.jpg",
-          "uploaderid": 2,
-          "date": "4/5/2022"
-        },
-        {
-          "image": "/static/media/cefe1.04c1be5be2781b3dff75.jpg",
-          "desc": "entre a una caja y sali sin guevitos",
-          "uploadername": "Gato Naranja",
-          "uploaderpic": "/static/media/cefe1.04c1be5be2781b3dff75.jpg",
-          "uploaderid": 2,
-          "date": "6/5/2022"
+          "image": "/static/media/Athena1.a6517e7443b77b072b89.jpg",
+          "desc": "Viajando...",
+          "uploadername": "Athena",
+          "uploaderpic": "/static/media/Athena2.650354ca1984069ee6d3.jpg",
+          "uploaderid": 3,
+          "date": "8/4/2022"
         }
       ],
       "follows": [
-        1
+        0
+      ],
+      "followers": [],
+      "id": 3
+    },
+    {
+      "profilePic": "/static/media/JulianaStein (5).4c16f9d3ccaf4d94cc58.jpg",
+      "username": "JulianaStein",
+      "bio": "Fotos de stock de JulianaStein (pexels.com)",
+      "posts": [
+        {
+          "image": "/static/media/JulianaStein (1).0135190c668c5d30d59e.jpg",
+          "desc": "Solo yo",
+          "uploadername": "JulianaStein",
+          "uploaderpic": "/static/media/JulianaStein (5).4c16f9d3ccaf4d94cc58.jpg",
+          "uploaderid": 5,
+          "date": "6/4/2022"
+        },
+        {
+          "image": "/static/media/JulianaStein (3).adbbdba1b966f7440649.jpg",
+          "desc": "#Black",
+          "uploadername": "JulianaStein",
+          "uploaderpic": "/static/media/JulianaStein (5).4c16f9d3ccaf4d94cc58.jpg",
+          "uploaderid": 5,
+          "date": "8/4/2022"
+        }
+      ],
+      "follows": [
+        0
+      ],
+      "followers": [],
+      "id": 4
+    },
+    {
+      "profilePic": "/static/media/Koolshooters (1).220e60d11fd60d02896c.jpg",
+      "username": "KoolShooters",
+      "bio": "Fotos de stock de KoolShooters (pexels.com)",
+      "posts": [
+        {
+          "image": "/static/media/Koolshooters (2).fe77c4c1072e5ae3a737.jpg",
+          "desc": "#Fitness",
+          "uploadername": "KoolShooters",
+          "uploaderpic": "/static/media/Koolshooters (1).220e60d11fd60d02896c.jpg",
+          "uploaderid": 4,
+          "date": "7/4/2022"
+        }
+      ],
+      "follows": [
+        0
       ],
       "followers": [],
       "id": 5

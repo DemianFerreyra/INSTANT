@@ -1,4 +1,4 @@
-import images from "./cefe/Cefefotos";
+import images from "./Cefefotos";
 //aca tenemos al usuario que se usara como prueba debido a que el sistema register/login no ha sido implementado. Si la database esta levantada, este usuario podra ser cambiado y se mostraran distintos atributos ajenos a el pero conectados(como los usuarios a los que sigue, etc)
 
 interface User {

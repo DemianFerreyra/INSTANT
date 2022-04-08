@@ -1,5 +1,5 @@
 import axios from "axios";
-
+let ids = 2;
 
 export function compare( a, b ) {
     if ( a.date < b.date ){
@@ -44,7 +44,7 @@ export function Setfollow(selffollows, followers, selfid, id){ //arreglo de tus 
     }      
 }
 
-export function CreatePost(img, desc, uploadername, uploaderpic, uploaderid, date){
+export function CreatePost(img, desc, uploadername, uploaderpic, uploaderid, date, selfposts){
   console.log('nuevo post')
   let post = {
     image: img,
@@ -54,9 +54,13 @@ export function CreatePost(img, desc, uploadername, uploaderpic, uploaderid, dat
     uploaderid: uploaderid,
     date: date
   }
-  let posts = [];
+  let posts = selfposts;
   posts.push(post);
-  axios.patch(`http://localhost:3001/profiles/0`, {posts: posts})
+  axios.patch(`http://localhost:3001/profiles/0`, {posts:selfposts},{
+    headers: {
+      "Content-type": "application/json; charset=UTF-8",
+    }
+  })
   .catch(error => {
     console.log(error);
   });

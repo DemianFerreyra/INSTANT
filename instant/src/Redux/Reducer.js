@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { GETUSER, CreateUser, GetFollowList, GETFEED, GETSELF} from './Actions'
-let ids = 0;
+import { GETUSER, GetFollowList, GETFEED, GETSELF, GETPOSTS} from './Actions'
+
 
 
 const initialState = {
@@ -8,6 +8,7 @@ const initialState = {
   users: [],
   user: {},
   posts: [],
+  recoposts: [],
 };
 
 const rootReducer = (state = initialState, action) =>{
@@ -41,35 +42,18 @@ const rootReducer = (state = initialState, action) =>{
             posts: action.payload
         }
 
+        case GETPOSTS:
+          console.log('get de posts recomendados completo')
+        return{
+            ...state,
+            recoposts: action.payload
+        }
+
         case GetFollowList:
           console.log('get de usuarioss completo')
         return{
             ...state,
             users: action.payload
-        }
-
-        case CreateUser:
-        console.log('nuevo usuario')
-        ids++
-        axios.post(
-            `http://localhost:3001/profiles`,
-            {
-              profilePic : action.payload.profilePic,
-              username : action.payload.username,
-              bio : action.payload.bio,
-              posts : action.payload.posts,
-              follows : action.payload.follows,
-              followers : action.payload.followers,
-            },
-            {
-              headers: {
-                "Content-type": "application/json; charset=UTF-8",
-              }
-            }
-          )
-        return{
-            ...state,
-            users: [...state.users, {...action.payload, id: ids}]
         }
 
         default: return {...state}

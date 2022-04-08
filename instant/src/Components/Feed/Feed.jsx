@@ -8,7 +8,6 @@ import { compare } from "../../Helpers/Helperfunctions";
 const Feed = () =>{
   const posts = useSelector((state) => state.posts)
   const dispatch = useDispatch();
-
   
   React.useEffect(() => {
      fetch('http://localhost:3001/profiles/0')

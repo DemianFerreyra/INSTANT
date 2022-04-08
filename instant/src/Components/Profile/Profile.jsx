@@ -4,7 +4,6 @@ import {useDispatch, useSelector} from 'react-redux'
 import { Link, useParams} from "react-router-dom";
 import { getUser, GetSelf } from "../../Redux/Actions";
 import Cards from "../Cards"
-import Crearusuario from "../../Helpers/Creadordeusuario";
 import {Setfollow} from "../../Helpers/Helperfunctions"
 
 export const Profile = () =>{
@@ -32,7 +31,6 @@ export const Profile = () =>{
     boton.innerText = "seguir"
     }
   }
-
       return (
        details.username?(<div>
          <div className="Profile">

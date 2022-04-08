@@ -2,12 +2,12 @@ import './App.css';
 import * as React from "react";
 import {Route, Routes} from 'react-router-dom'
 import Feed from './Components/Feed/Feed'
-import {Profile} from './Components/Profile/Profile.jsx'
+import {Profile} from './Components/Profile/Profile'
 import Recommended from './Components/Recommended/Recommended'
 import About from './Components/About'
 import Follows from './Components/Profile/Follows'
 import Followers from './Components/Profile/Followers'
-import LowBar from './Components/LowBar.jsx'
+import LowBar from './Components/LowBar'
 import Createpost from './Components/CreatePost/Createpost';
 
 
