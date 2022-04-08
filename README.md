@@ -1,6 +1,6 @@
 ### INSTANT
 Proyecto de red social estilo Instagram usando React/Redux sin uso de API's.
-</hr>
+---
 
 El objetivo de este proyecto es afianzar mis conocimientos en react/redux usando localhost y json server para la base de datos.
 Si bien el proyecto nunca sera deployado, el mismo puede ser descargado por cualquiera para fines educativos, ya sea por si quieren hacer alguna aplicacion similar, si simplemente quieren mirar el codigo de curiosidad o cualquier otro motivo.
