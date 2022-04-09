@@ -1,4 +1,4 @@
-<p align="center" font-size:25px>INSTANT</p>
+<p align="center">PROYECTO:INSTANT</p>
 Proyecto de red social estilo Instagram usando React/Redux sin uso de API's.
 ---
 ###PROYECTO TERMINADO (SOLO POSIBLES CAMBIOS LEVES)
